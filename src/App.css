@@ -1,38 +1,134 @@
-.App {
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
   text-align: center;
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: 'Cousine', monospace;
+  font-size: 32px;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  width: 260px;
+  border: none;
+  padding: 16px 24px;
+  background-color: white;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 0px 4px #e3b13d;
+  font-family: 'Cousine', monospace;
+  font-size: 16px;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 0px 4px #e3b13d;
+}
+.icon {
+  height: 40px;
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.check {
+  width: 22px;
+}
+.box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
+  width: 280px;
+}
+.two {
+  margin-top: 90px;
+}
+h3, h2, ul, p {
+  font-family: 'Cousine', monospace;
+  margin: 5px;
+}
+.lab {
+  display: flex;
+  height: 100px;
+}
+h2{
+  align-self: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  @media (max-width: 540px) {
+    .two {
+      margin-top: 10px;
+    }
+    .foodimg {
+      width: 270px;
+    }
+    .list {
+      align-self: center;
+    }
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media (max-width: 360px) {
+    .foodimg {
+      width: 260px;
+    }
+    .search {
+      width: 200px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  @media (max-width: 320px) {
+    .foodimg {
+      width: 200px;
+    }
+    li {
+      font-size: 14px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    h3, p{
+      font-size: 14px;
+    }
+    h1{
+      font-size: 20px;
+    }
+    .search {
+      width: 160px;
+    }
   }
-}
